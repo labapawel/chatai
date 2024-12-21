@@ -1,0 +1,9 @@
+<div class="chat-message">
+
+    <div [ngClass]="{message:true, rev:item.role=='assistant',
+            send:item.role=='user'}" *ngFor="let item of allMessages()">
+        <div class="message-content">
+            {{item.content}}
+        </div>
+    </div>
+</div>
